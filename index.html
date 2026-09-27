@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catch Me If You Can - a fun button-chasing browser game.">
+  <title>Catch Me If You Can</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hud">
+    <div class="logo">
+      <div class="logo-icon">🎯</div>
+      <div>
+        <h1>Catch Me If You Can</h1>
+        <div class="subtitle">The button really doesn't want to be clicked.</div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <small>Hits</small>
+        <b id="score">0</b>
+      </div>
+      <div class="stat">
+        <small>Time</small>
+        <b id="time">20.0</b>
+      </div>
+    </div>
+  </header>
+
+  <main class="arena" id="arena">
+    <div id="message">Press start and try to catch the button 👀</div>
+
+    <button id="start">▶ Start Game</button>
+    <button id="target" style="display: none;">CLICK ME</button>
+
+    <div class="instructions">
+      Move your mouse toward the button... if you can 😈
+    </div>
+
+    <div id="result">
+      <div class="card">
+        <div class="emoji">😂</div>
+        <h2>TIME'S UP!</h2>
+        <p>The button survived another day.</p>
+        <div class="final-score">
+          Your score: <strong id="finalScore">0</strong> 🎯
+        </div>
+        <button id="restart">↻ Play Again</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
